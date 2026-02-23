@@ -125,25 +125,21 @@ footer {
     opacity: 0.5;
 }
 
-/* Ajuste do Header para alinhar a logo e o título */
 .logo-container {
     display: flex;
-    align-items: center; /* Alinha verticalmente no centro */
-    justify-content: center; /* Centraliza o conjunto na tela */
-    gap: 15px; /* Espaço entre a imagem e o texto */
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px;
     margin-bottom: 5px;
 }
 
 .logo {
-    height: 50px; /* Ajuste a altura conforme necessário */
-    width: auto;  /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Opcional: arredonda os cantos da logo */
+    height: 50px; 
+    width: auto;  
+    border-radius: 8px; 
 }
 
 header h1 {
     font-size: 1.5rem;
     color: var(--primary);
-    margin: 0; /* Remove margens padrão que podem desalinhá-lo */
-}
-
-/* O resto do CSS enviado anteriormente continua igual... */
+    margin: 0;
