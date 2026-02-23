@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Postura | Granja Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <header>
+    <div class="logo-container">
+        <img src="rancho-logo.png" alt="Logo da Granja" class="logo">
+        <h1>Monitor de Postura</h1>
+    </div>
+    <p>Controle diário de produtividade</p>
+</header>
+        </header>
+
+        <main class="card">
+            <div class="input-group">
+                <label for="totalAves">Total de Aves no Galpão</label>
+                <input type="number" id="totalAves" placeholder="Ex: 500" inputmode="numeric">
+            </div>
+
+            <div class="input-group">
+                <label for="ovosColhidos">Ovos Colhidos Hoje</label>
+                <input type="number" id="ovosColhidos" placeholder="Ex: 420" inputmode="numeric">
+            </div>
+
+            <button id="btnCalcular" onclick="calcularPostura()">Calcular Taxa</button>
+
+            <div id="resultadoContainer" class="resultado hidden">
+                <span>Taxa de Postura:</span>
+                <strong id="valorTaxa">0%</strong>
+                <p id="statusMensagem"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Granja Digital - Controle de Postura</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
